@@ -70,8 +70,8 @@
 1. **載入字幕檔案**:
    使用 `langchain` 的 `SRTLoader` 載入 `.srt` 字幕檔案，並將其分割成適合語言模型處理的小段文本
    ```python
-  document = SRTLoader("test2.srt").load()
-  text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=0)
+   document = SRTLoader("test2.srt").load()
+   text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=0)
    ```
 
 2. **建立向量資料庫**:
